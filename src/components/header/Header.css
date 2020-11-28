@@ -1,0 +1,129 @@
+header {
+    height: 152px;
+    padding: 56px 0px 56px 164px;
+}
+
+header > div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    margin-left: 94px;
+}
+
+ul li {
+    display: inline;    
+}
+
+ul li:nth-child(1) {
+    margin-right: 56px;
+}
+ul li:nth-child(2) {
+    margin-right: 48px;
+}
+
+ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #7D828F;
+    transition: 0.3s;
+}
+
+ul a:hover {
+    color: #1B1D23;
+}
+
+@media (max-width: 840px) {
+    header {
+        padding-left: 97px;
+    }
+    ul {
+        margin-left: 78px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        padding-left: 6vw;
+    }    
+}
+
+@media (max-width: 580px) {
+    header {
+        position: relative;
+        padding: 32px; 
+        height: 96px;
+    }
+    header > div {
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo {
+        height: 32px;
+    }
+
+    #menuH {
+        position: relative;
+        cursor: pointer;
+        width: 24px;
+        height: 17px;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #menuH span,
+    #menuH span::after,
+    #menuH span::before {
+        content:"";
+        width: 24px;
+        height: 3px;
+        background-color:#1B1D23;
+        display:block;  
+    }
+    #menuH span::after,
+    #menuH span::before{
+        position:absolute;
+        transition: transform 0.3s; 
+    }
+    #menuH span::after {
+        bottom: 0px;  
+    }
+    #menuH span::before {
+        top: 0px;
+    }
+    #menuH.is-active span{
+        width: 21px; /* error model ? adjust */
+        background-color:transparent;
+    }
+    #menuH.is-active  span:after {
+        transform:rotate(-45deg) translateY(-7px) translateX(3px);
+    }
+    #menuH.is-active  span:before {
+        transform:rotate(45deg) translateY(7px) translateX(3px);
+    }
+
+    ul {
+        position: fixed;
+        /*z-index: 1;*/
+        font-size: 18px;
+        top: 96px;
+        height: 0px;
+        background-color: #EEEFF4;
+        margin-left:0px;
+        width: calc(100% - 32px);
+        padding: 0px;
+        transition: all 0.3s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 48px;
+    }
+    ul.is-open {
+        height:235px;
+        padding: 50px 0px 46px 48px; /* error model ? adjust */
+    }
+}
