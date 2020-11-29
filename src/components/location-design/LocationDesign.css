@@ -1,0 +1,41 @@
+#location-design {
+    width: 25px;
+    height: 265px;
+    position: absolute;
+    left: 64px;
+    top:0px;  
+    display: flex;
+    justify-content: space-between; 
+    writing-mode: vertical-lr;
+}
+#location-design span:first-of-type::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 104px;
+    background-color: #C8CCD8;
+    
+}
+#location-design span:last-of-type {
+    color: #C8CCD8;
+    line-height: 22px;
+    letter-spacing: 15px;
+}
+
+@media (max-width: 840px) {
+    #location-design {
+        left: 39px;
+    }
+}
+
+@media (max-width: 746px) {
+    #location-design {
+        left: calc(55px - (746px - 100vw));
+    }    
+}
+
+@media (max-width: 690px) {
+    #location-design {
+        display: none;
+    } 
+}
