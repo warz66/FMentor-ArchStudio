@@ -1,4 +1,5 @@
 import './Home.css';
+import Carousel from 'components/carousel/Carousel';
 import React, { useEffect } from 'react';
 
 const Home = ({assignLocation}) => {
@@ -9,7 +10,7 @@ const Home = ({assignLocation}) => {
 
     return (
         <div id="home">
-
+            <Carousel/>
         </div>
     );
 }

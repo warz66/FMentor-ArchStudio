@@ -35,7 +35,7 @@ ul a:hover {
     color: #1B1D23;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1300px) {
     header {
         padding-left: 97px;
     }
@@ -106,8 +106,8 @@ ul a:hover {
     }
 
     ul {
-        position: fixed;
-        /*z-index: 1;*/
+        position: absolute;
+        z-index: 1;
         font-size: 18px;
         top: 96px;
         height: 0px;

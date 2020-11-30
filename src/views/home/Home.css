@@ -1,1 +1,22 @@
- 
+#home {
+    margin: 0px 165px;
+}
+
+@media (max-width: 1300px) {
+    #home {
+        margin: 0px 97.5px;
+    }    
+}
+
+@media (max-width: 746px) {
+    #home {
+        margin-left: calc(97.5px - (746px - 100vw));
+        margin-right: calc(97.5px - (746px - 100vw));
+    }    
+}
+
+@media (max-width: 690px) {
+    #home {
+        margin: 0;
+    }
+}
