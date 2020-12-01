@@ -1,0 +1,31 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+}
+.button > span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 0px 30px;
+    height: 72px;
+    background-color: var(--very-dark-blue);
+    color: white;
+    white-space: nowrap;
+    transition: all 0.3s;      
+}
+.button svg {
+    margin-left: 24px;
+}
+
+.button > span:hover {
+    background-color: var(--dark-grey);
+}
+
+@media (max-width: 300px) {
+    .button > span {
+        padding: 0px 16px;
+    } 
+    .button svg {
+        margin-left: 12px;
+    }
+}

@@ -13,11 +13,13 @@ function Header() {
                 <div id="menuH" onClick={() => setOpenMenu(!openMenu)} className={openMenu ? 'is-active' : ''}>
                     <span></span>
                 </div>
-                <ul className={openMenu ? 'is-open' : ''}>
-                    <li><Link to="/portfolio">Portfolio</Link></li>
-                    <li><Link to="/about-us">About Us</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
+                <div id="menu" className={openMenu ? 'is-open' : ''}>
+                    <ul>
+                        <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/about-us">About Us</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
+                </div>
             </div>
         </header>
     );

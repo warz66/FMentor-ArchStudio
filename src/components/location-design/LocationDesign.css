@@ -13,28 +13,28 @@
     display: inline-block;
     width: 1px;
     height: 104px;
-    background-color: #C8CCD8;
+    background-color: var(--light-grey);
     
 }
 #location-design span:last-of-type {
-    color: #C8CCD8;
+    color: var(--light-grey);
     line-height: 22px;
     letter-spacing: 15px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1325px) {
     #location-design {
         left: 39px;
     }
 }
 
-@media (max-width: 746px) {
+@media (max-width: 784px) {
     #location-design {
-        left: calc(55px - (746px - 100vw));
+        left: calc(55px - (784px - 100vw));
     }    
 }
 
-@media (max-width: 690px) {
+@media (max-width: 730px) {
     #location-design {
         display: none;
     } 

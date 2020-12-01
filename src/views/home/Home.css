@@ -2,21 +2,118 @@
     margin: 0px 165px;
 }
 
-@media (max-width: 1300px) {
+#welcome {
+    position: relative;
+    margin-top: 195px;
+}
+
+#welcome .h1-design-light {
+    position: absolute;
+    top: -78px; 
+}
+
+#welcome > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#welcome-info {
+    margin-top: 82px;
+    margin-right: 20px;
+    margin-left: 189px;
+    width: 446px;   
+}
+
+#welcome-info h2 {
+    margin-bottom: 52px;
+    z-index: 1;
+    position: relative;
+}
+
+#welcome-info p {
+    margin-bottom: 52px;
+    font-weight: 500;
+}
+
+#welcome img {
+    width: 350px;
+    height: 568px;
+}
+
+@media (max-width: 1325px) {
+    #welcome-info {
+        margin-left: calc(189px - (1335px - 100vw));
+    }
     #home {
         margin: 0px 97.5px;
+    }   
+}
+
+@media (max-width: 1190px) {
+    #welcome .h1-design-light {
+        font-size: 16.1vw;
     }    
 }
 
-@media (max-width: 746px) {
+@media (max-width: 1150px) {
+    #welcome-info {
+        margin-left: 0px;
+    }    
+}
+
+@media (max-width: 1010px) {
+    #welcome {
+        margin-top: 256px;
+    }
+    #welcome .h1-design-light {
+        font-size: 120px;
+        top: -168px; 
+    }  
+    #welcome-info {
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    #welcome img {
+        display: none;
+    }
+    #welcome-info h2 {
+        width: 446px;
+    } 
+}
+
+@media (max-width: 784px) {
     #home {
-        margin-left: calc(97.5px - (746px - 100vw));
-        margin-right: calc(97.5px - (746px - 100vw));
+        margin-left: calc(97.5px - (784px - 100vw));
+        margin-right: calc(97.5px - (784px - 100vw));
     }    
 }
 
-@media (max-width: 690px) {
+@media (max-width: 730px) {
     #home {
         margin: 0;
+    }
+    #welcome {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    #welcome .h1-design-light {
+        display: none;
+    }      
+    #welcome {
+        margin-top: 145px;
+    }
+}
+
+@media (max-width: 500px) {
+    #welcome-info h2 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.429px;
+        margin-bottom: 26px;
     }
 }

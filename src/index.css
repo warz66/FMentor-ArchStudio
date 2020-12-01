@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 @import './assets/styles/minireset.min.css';
 
+:root {
+  --very-dark-blue: #1B1D23;
+  --dark-grey: #60636D;
+  --medium-grey: #7D828F;
+  --light-grey: #C8CCD8;
+  --very-light-grey: #EEEFF4;
+  --red-error: #DF5656;
+}
+
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
   line-height: 25px;
-  color: #1B1D23;
+  color: var(--very-dark-blue);
 }
 
 h1 {
@@ -15,10 +24,20 @@ h1 {
   letter-spacing: -2px;
 }
 
+.h1-design-light {
+  font-size: 200px;
+  line-height: 200px;
+  letter-spacing: -2px; /* -5px ? */
+  font-weight: 700;
+  color: var(--very-light-grey);  
+}
+
 h2 {
   font-size: 56px;
   font-weight: bold;
   line-height: 56px;
+  letter-spacing: -2px;
+  word-spacing: 4px;
 }
 
 h3 {

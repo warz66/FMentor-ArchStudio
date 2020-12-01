@@ -27,15 +27,15 @@ ul li:nth-child(2) {
 ul a {
     text-decoration: none;
     font-weight: bold;
-    color: #7D828F;
+    color: var(--medium-grey);
     transition: 0.3s;
 }
 
 ul a:hover {
-    color: #1B1D23;
+    color: var(--very-dark-blue);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1325px) {
     header {
         padding-left: 97px;
     }
@@ -44,15 +44,15 @@ ul a:hover {
     }
 }
 
-@media (max-width: 746px) {
+@media (max-width: 784px) {
     header {
-        padding-left: calc(97px - (746px - 100vw));
+        padding-left: calc(97px - (784px - 100vw));
     }    
 }
 
-@media (max-width: 690px) {
+@media (max-width: 730px) {
     header {
-        position: relative;
+        /*position: relative;*/
         padding: 32px; 
         height: 96px;
     }
@@ -80,7 +80,7 @@ ul a:hover {
         content:"";
         width: 24px;
         height: 3px;
-        background-color:#1B1D23;
+        background-color:var(--very-dark-blue);
         display:block;  
     }
     #menuH span::after,
@@ -106,24 +106,34 @@ ul a:hover {
     }
 
     ul {
-        position: absolute;
-        z-index: 1;
         font-size: 18px;
-        top: 96px;
-        height: 0px;
-        background-color: #EEEFF4;
-        margin-left:0px;
+        height: 235px;
+        background-color: var(--very-light-grey);
         width: calc(100% - 32px);
-        padding: 0px;
-        transition: all 0.3s;
+        margin-left: 32px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 48px;
+        padding: 50px 0px 46px 0px;
     }
-    ul.is-open {
-        height:235px;
-        padding: 50px 0px 46px 48px; /* error model ? adjust */
+    ul li {
+        margin-left: 48px;
+    }
+
+    #menu {
+        position: absolute;
+        z-index: 10;
+        top: 96px;
+        bottom:0;
+        right:0;
+        width: 0;
+        height: 100%;
+        transition: all 0.3s;
+    }
+
+    #menu.is-open {
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
     }
 }
