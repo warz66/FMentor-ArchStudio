@@ -25,12 +25,12 @@ const App = () => {
       {/*<img src={mobileMenu} alt="" style={{position: 'absolute', left:0, top:0, zIndex: 2, opacity: 0.3, margin: 0, width: '375px'}}/>*/}
       <Router>
       <Header/>
-        {<Switch>
+        <Switch>
           <Route exact path="/">
             <Home assignLocation={assignLocation}/>
           {/*<Route exact path="/" component={Home} assignLocation={assignLocation}/>*/}
           </Route>
-        </Switch>}
+        </Switch>
       </Router>
     </div>
   );
