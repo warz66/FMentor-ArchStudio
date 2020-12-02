@@ -1,0 +1,56 @@
+#small-team {
+    margin-top: 198px;
+    position: relative;
+}
+
+#small-team picture::after {
+    position: absolute;
+    content:"";   
+    height: 560px; 
+    width:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#small-team picture img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover; 
+}
+
+#small-team-info {
+    position: absolute;
+    top: 174px;
+    left: 190px;
+    width: 445px;
+}
+
+#small-team-info h2 {
+    color: white;
+    margin-bottom: 34px;
+}
+
+@media (max-width: 935px) {
+    #small-team-info {
+        left: 58px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 580px) {
+    #small-team {
+        margin-top: 96px;
+    }
+    #small-team-info {
+        top:184px;
+        left: 32px;
+        width: 255px;
+    }
+    #small-team-info h2 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.429px;
+        margin-bottom: 28px;
+    }    
+}

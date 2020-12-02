@@ -10,6 +10,10 @@
   --red-error: #DF5656;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
@@ -37,7 +41,6 @@ h2 {
   font-weight: bold;
   line-height: 56px;
   letter-spacing: -2px;
-  word-spacing: 4px;
 }
 
 h3 {
