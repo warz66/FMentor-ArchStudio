@@ -9,28 +9,28 @@ header > div {
     align-items: center;
 }
 
-ul {
+header ul {
     margin-left: 94px;
 }
 
-ul li {
+header ul li {
     display: inline;    
 }
 
-ul li:nth-child(1) {
+header ul li:nth-child(1) {
     margin-right: 56px;
 }
-ul li:nth-child(2) {
+header ul li:nth-child(2) {
     margin-right: 48px;
 }
 
-ul a {
+header ul a {
     font-weight: bold;
     color: var(--medium-grey);
     transition: 0.3s;
 }
 
-ul a:hover {
+header ul a:hover {
     color: var(--very-dark-blue);
 }
 
@@ -38,7 +38,7 @@ ul a:hover {
     header {
         padding-left: 97px;
     }
-    ul {
+    header ul {
         margin-left: 78px;
     }
 }
@@ -120,7 +120,7 @@ ul a:hover {
         background-color: rgba(0,0,0,0.5);
     }
 
-    ul {
+    header ul {
         font-size: 18px;
         height: 235px;
         background-color: var(--very-light-grey);
@@ -132,7 +132,7 @@ ul a:hover {
         justify-content: space-between;
         padding: 50px 0px 46px 0px;
     }
-    ul li {
+    header ul li {
         margin-left: 48px;
     }
 }

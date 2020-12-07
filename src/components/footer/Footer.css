@@ -1,0 +1,138 @@
+footer {
+    height: 200px;
+    margin: 200px 165px 0px 165px;
+    display: flex;
+    position: relative;
+}
+
+footer > div:first-of-type {
+    background-color: var(--very-dark-blue);
+    width: 200px;
+    position: relative;
+}
+
+footer > div:first-of-type svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer > div:last-of-type {
+    width: 784px;
+    display: flex;
+    align-items: center;
+    background-color: var(--very-light-grey);
+}
+
+footer ul {
+    margin-left: 85px;
+}
+
+footer ul li {
+    display: inline;    
+}
+
+footer ul li:nth-child(1) {
+    margin-right: 56px;
+}
+footer ul li:nth-child(2) {
+    margin-right: 48px;
+}
+
+footer ul a {
+    font-weight: bold;
+    color: var(--medium-grey);
+    transition: 0.3s;
+}
+
+footer ul a:hover {
+    color: var(--very-dark-blue);
+}
+
+footer > .button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1457px) {
+    footer > div:last-of-type {
+        width: calc(784px - (1457px - 100vw));
+    }
+}
+
+@media (max-width: 1325px) {
+    footer {
+        margin-left: 97.5px;
+        margin-right: 97.5px;
+    }
+    footer > div:last-of-type {
+        width: calc(784px - (1325px - 100vw));
+    }
+}
+
+@media (max-width: 1150px) {
+    footer  {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer > div:last-of-type {
+        width: calc(784px - (1150px - 100vw));
+    }
+}
+
+@media (max-width: 960px) {
+    footer {
+        height: 120px;
+    }
+    footer > div:first-of-type {
+        width: 120px;
+    }
+    footer ul {
+        margin-left: 40px;
+    }
+    footer > div:first-of-type #footer-logo {
+        height: 23px;
+    }
+    footer > div:last-of-type {
+        width: calc(667px - (960px - 100vw));
+    }
+}
+
+@media (max-width: 784px) {
+    footer {
+        height: 383px;
+        flex-direction: column;
+        margin-top: 132px;
+        background-color: var(--very-light-grey);
+        align-items: center;
+    }
+    footer > div:first-of-type {
+        position: absolute;
+        height: 120px;
+        top: -60px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    footer > div:last-of-type {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    footer ul {
+        margin-left: 0;
+        text-align: center;
+    }
+    footer ul li {
+        display: block;
+        margin: 32px 0px !important; 
+    }
+    footer > .button {
+        position: initial;
+        right: initial;
+        top: initial;
+        transform: initial;
+    }
+}

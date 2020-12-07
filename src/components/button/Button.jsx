@@ -3,7 +3,7 @@ import './Button.css';
 
 import { Link } from "react-router-dom";
 
-const Button = ({path= "/portfolio", text = "See Our Portfolio "}) => {
+const Button = ({path = "/portfolio", text = "See Our Portfolio "}) => {
 
     return (
         <Link className="button" to={path}>

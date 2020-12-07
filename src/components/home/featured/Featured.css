@@ -39,7 +39,9 @@
 
 @media  (max-width: 580px) {
     #featured {
-        margin-top: 49px;    
+        margin-top: 49px;
+        padding-bottom: 96px;    
+        position: relative;
     }  
     #featured h2 {
         font-size: 40px;
@@ -51,8 +53,8 @@
 
     #featured .button {
         position: absolute;
-        bottom: -96px;
-        width: calc(100% - 64px);
+        bottom: 0px;
+        width: 100%;
     }
     #featured .button span {
         display: flex;

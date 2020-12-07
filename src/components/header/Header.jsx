@@ -1,11 +1,11 @@
-import './Header.css';
+import styles from './Header.css';
 import logo from 'assets/logo.svg';
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
-function Header() {
+const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
-
+    
     return (
         <header>
             <div>
