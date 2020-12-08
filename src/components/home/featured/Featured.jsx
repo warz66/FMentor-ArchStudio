@@ -12,7 +12,7 @@ const Featured = () => {
                 <Button path="/portfolio" text="See All"/>
             </div>
 
-            <ProjectsGallery  arrayProjectCards={arrayProjectCards} numberDesign={true} date={false}/>
+            <ProjectsGallery  arrayProjectCards={arrayProjectCards} numberDesign={true} date={false} scale={false}/>
 
         </section>
     );

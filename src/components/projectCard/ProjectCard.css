@@ -2,7 +2,22 @@
     position: relative;
     height: 560px;
     color: white;
+    background-color: #e1e1e1;
+    transition: all 0.2s ease-in-out;
+    z-index: 9;
 }
+@media (pointer: fine) and (min-width: 731px) {
+    .project-card.is-scale {
+        transform: scale(1.25);
+        z-index: 10 !important;
+    } 
+    .project-card picture {
+        transition: opacity 0.2s;
+    }
+    .project-card.is-hover picture {
+        opacity: 0.75;
+    }
+}  
 
 .project-card > a {
     color: white;
@@ -10,10 +25,17 @@
 
 .project-card img {
     object-fit: cover;
-    /*object-position: top;*/
     width: 100%;
     height: 560px;
 }
+
+/*.project-card img:hover {
+    width: 940px;
+    height: 626px;
+    transform: scaleX(-1);
+    z-index: 10;
+    transition: all 0.3s;
+}*/
 
 .project-card picture::after {
     position: absolute;
@@ -34,12 +56,14 @@
     line-height: 200px;
     opacity: 0.5;
     color: white;
+    pointer-events: none;
 }
 
 .project-card-info {
     position: absolute;
     bottom: 38px;
     left: 40px;
+    cursor: pointer;
 }
 
 .project-card-info h3 {

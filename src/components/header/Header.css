@@ -110,10 +110,10 @@ header ul a:hover {
         width: 21px; /* error model ? adjust */
         background-color:transparent;
     }
-    #menuH.is-active  span:after {
+    #menuH.is-active span:after {
         transform:rotate(-45deg) translateY(-7px) translateX(3px);
     }
-    #menuH.is-active  span:before {
+    #menuH.is-active span:before {
         transform:rotate(45deg) translateY(7px) translateX(3px);
     }
 
@@ -124,11 +124,25 @@ header ul a:hover {
         bottom:0;
         right:0;
         width: 0;
-        height: calc(100% - 96px);
+        height: 235px;
         transition: all 0.3s;
     }
 
     #menu.is-open {
+        width: 100%;
+    }
+
+    #menu-curtain {
+        position: absolute;
+        z-index: 9;
+        top: 96px;
+        bottom:0;
+        right:0;
+        width: 0;
+        transition: all 0.3s;
+    }
+
+    #menu-curtain.is-open {
         width: 100%;
         background-color: rgba(0,0,0,0.5);
     }

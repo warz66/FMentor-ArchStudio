@@ -3,6 +3,7 @@ import Header from 'components/header/Header';
 import Footer from 'components/footer/Footer';
 import Home from 'views/home/Home';
 import Portfolio from 'views/portfolio/Portfolio';
+import ScrollToTop from "components/scroll-to-top/ScrollToTop";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LocationDesign from 'components/location-design/LocationDesign';
 import React, { useState } from 'react';
@@ -40,13 +41,18 @@ const App = () => {
 
       <Router>
 
+        <ScrollToTop/>
+
         <Header/>
+        
         <Switch>
 
+          {/*<Route exact path="/" render={props => <Home key={Date.now()} assignLocation={assignLocation} {...props}/>}/>*/}
           <Route exact path="/">
             <Home assignLocation={assignLocation}/>
-            {/*<Route exact path="/" component={Home} assignLocation={assignLocation}/>*/}
           </Route>
+            {/*<Route exact path="/" component={Home} assignLocation={assignLocation}/>*/}
+          
 
           <Route path="/portfolio">
             <Portfolio assignLocation={assignLocation}/>
