@@ -1,7 +1,7 @@
 import './Featured.css';
 import Button from 'components/button/Button'
-import FeaturedCard from 'components/featuredCard/FeaturedCard'
-import cards from './featuredCards';
+import ProjectsGallery from 'components/projectsGallery/ProjectsGallery'
+import arrayProjectCards from './featuredProjectCardsHome';
 
 const Featured = () => {
     
@@ -9,13 +9,11 @@ const Featured = () => {
         <section id="featured">
             <div>
                 <h2>Featured</h2>
-                <Button path="/portofolio" text="See All"/>
+                <Button path="/portfolio" text="See All"/>
             </div>
-            <div id="featured-cards">
-                {cards.map( (card, index) => {
-                                return <FeaturedCard card={card} home={true} index={index+1} key={card.title}/> 
-                        })}
-            </div> 
+
+            <ProjectsGallery  arrayProjectCards={arrayProjectCards} numberDesign={true} date={false}/>
+
         </section>
     );
 }

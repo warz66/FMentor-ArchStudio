@@ -1,17 +1,21 @@
-.featured-card {
+.project-card {
     position: relative;
-    color: white;
     height: 560px;
+    color: white;
 }
 
-.featured-card img {
+.project-card > a {
+    color: white;
+}
+
+.project-card img {
     object-fit: cover;
-    object-position: top;
+    /*object-position: top;*/
     width: 100%;
     height: 560px;
 }
 
-.featured-card picture::after {
+.project-card picture::after {
     position: absolute;
     content:"";
     height: 50%;
@@ -32,33 +36,33 @@
     color: white;
 }
 
-.featured-card-info {
+.project-card-info {
     position: absolute;
     bottom: 38px;
     left: 40px;
 }
 
-.featured-card-info h3 {
+.project-card-info h3 {
     margin-bottom: 4px;
 }
 
-.featured-card-info a {
+.project-card-info a {
     font-weight: 500;
     color: white;
 }
 
-@media (max-width: 970px) {
-    .featured-card {
+@media (max-width: 1040px) {
+    .project-card {
         height: 240px;
     }
-    .featured-card img {
+    .project-card img {
         height: 240px;
     }
     .design-number {
         right: 12px;
         top: 38px;
     }
-    .featured-card picture::after {
+    .project-card picture::after {
         height: 100%;
     }
 }
@@ -67,7 +71,7 @@
     .design-number {
         display: none;
     }
-    .featured-card-info {
+    .project-card-info {
         bottom: 22px;
         left: 25px;
     }

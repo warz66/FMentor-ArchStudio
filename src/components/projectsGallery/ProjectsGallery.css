@@ -1,0 +1,12 @@
+#projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px , 1fr));
+    gap: 32px 30px;
+}
+
+@media  (max-width: 1040px) {
+    #projects-gallery {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

@@ -1,5 +1,6 @@
 #featured {
     margin-top: 191px;
+    margin-bottom: 200px;
 }
 
 #featured > div:first-of-type {
@@ -14,17 +15,7 @@
     margin-top: 13px;
 }
 
-#featured-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(233px , 1fr));
-    gap: 30px;
-}
-
-@media  (max-width: 970px) {
-    #featured-cards {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
+@media  (max-width: 1040px) {
     #featured > div:first-of-type {
         margin-bottom: 85px; 
     }
@@ -40,6 +31,7 @@
 @media  (max-width: 580px) {
     #featured {
         margin-top: 49px;
+        margin-bottom: 132px;
         padding-bottom: 96px;    
         position: relative;
     }  

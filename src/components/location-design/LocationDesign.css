@@ -1,11 +1,9 @@
 #location-design {
     width: 25px;
-    height: 265px;
     position: absolute;
     left: 64px;
     top:0px;  
     display: flex;
-    justify-content: space-between; 
     writing-mode: vertical-lr;
 }
 #location-design span:first-of-type::after {
@@ -20,6 +18,7 @@
     color: var(--light-grey);
     line-height: 22px;
     letter-spacing: 15px;
+    margin-top: 48px;
 }
 
 @media (max-width: 1325px) {

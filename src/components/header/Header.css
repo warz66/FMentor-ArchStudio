@@ -9,6 +9,10 @@ header > div {
     align-items: center;
 }
 
+header > div:first-of-type a {
+    height: 40px;
+}
+
 header ul {
     margin-left: 94px;
 }
@@ -27,11 +31,17 @@ header ul li:nth-child(2) {
 header ul a {
     font-weight: bold;
     color: var(--medium-grey);
-    transition: 0.3s;
 }
 
 header ul a:hover {
     color: var(--very-dark-blue);
+    transition: color 0.3s;
+}
+
+#menu .link-activated {
+    padding-bottom: 11px;
+    background: bottom right 40% no-repeat linear-gradient(var(--medium-grey),var(--medium-grey));
+    background-size: 24px 1px;
 }
 
 @media (max-width: 1325px) {
@@ -59,6 +69,9 @@ header ul a:hover {
         height: 32px;
         display: flex;
         justify-content: space-between;
+    }
+    header > div:first-of-type a {
+        height: 32px;
     }
     #logo {
         height: 32px;
@@ -111,7 +124,7 @@ header ul a:hover {
         bottom:0;
         right:0;
         width: 0;
-        height: 100%;
+        height: calc(100% - 96px);
         transition: all 0.3s;
     }
 
