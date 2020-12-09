@@ -29,14 +29,6 @@
     height: 560px;
 }
 
-/*.project-card img:hover {
-    width: 940px;
-    height: 626px;
-    transform: scaleX(-1);
-    z-index: 10;
-    transition: all 0.3s;
-}*/
-
 .project-card picture::after {
     position: absolute;
     content:"";

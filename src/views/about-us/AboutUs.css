@@ -1,0 +1,126 @@
+#about-us {
+    margin: 0px 165px;
+}
+
+#hero {
+    position: relative;
+    max-height: 720px;
+    margin-bottom: 200px;
+}
+
+#about-us #hero #hero-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 628px;
+    height: 503px; 
+}
+
+#about-us #hero #hero-info .h1-design-light {
+    position: absolute;
+    top: -78px;
+    left: -20px;
+}
+
+#about-us #hero #hero-info #hero-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 446px;
+    height: 343px;
+}
+
+#about-us #hero #hero-info #hero-text::after {
+    content:"";
+    position: absolute;
+    height: 1px;
+    width: 65px;
+    background-color: var(--light-grey);
+    top: 0px;
+}
+
+#about-us #hero #hero-info #hero-text h2 {
+    margin-bottom: 49px;
+}
+
+@media (max-width: 1325px) {
+    #about-us {
+        margin: 0px 97.5px;
+    }   
+}
+
+@media (max-width: 1100px) {
+    #about-us #hero #hero-info {
+        width: 515px;
+        height: 431px;
+    }
+    #about-us #hero #hero-info .h1-design-light {
+        font-size: 120px;
+        top: -86px;
+        right: -4px;
+        left: initial;
+    }
+    #about-us #hero #hero-info #hero-text {
+        width: 456px;
+        /*height: 268px;*/
+    }
+}
+
+@media (max-width: 785px) {
+    #about-us {
+        margin-left: calc(97.5px - (785px - 100vw));
+        margin-right: calc(97.5px - (785px - 100vw));
+    }
+    /*#hero picture img{
+        width: 100%;
+        object-fit: cover;
+    }      
+    #about-us #hero #hero-info { 
+        display: none;
+    }  */ 
+}
+
+@media (max-width: 730px) {
+    #about-us {
+        margin: 32px;
+    }
+}
+
+@media (max-width: 654px) {
+    #about-us {
+        margin: 0px;
+    }   
+    #hero picture img {
+        width: 100%;
+        max-height: 720px;
+        object-fit: cover;
+    }
+    #about-us #hero #hero-info .h1-design-light { 
+        right: 0px;
+    } 
+}
+
+@media (max-width: 580px) {
+    #hero {
+        max-height: initial;
+    }
+    #about-us #hero #hero-info #hero-text::after {
+        content: none;
+    }
+    #about-us #hero #hero-info { 
+        position: initial;
+        padding: 0px 32px;
+        width: 100%;
+        display: block;
+
+    }
+    #about-us #hero #hero-info .h1-design-light { 
+        display: none;
+    } 
+}

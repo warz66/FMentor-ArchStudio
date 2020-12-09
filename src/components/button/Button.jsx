@@ -5,8 +5,14 @@ import { Link } from "react-router-dom";
 
 const Button = ({path = "/portfolio", text = "See Our Portfolio "}) => {
 
+    function scrollToTop() {
+        if(path === window.location.pathname) {
+            window.scroll({top:0,behavior:'smooth'});
+        }
+    }
+
     return (
-        <Link className="button" to={path}>
+        <Link onClick={scrollToTop} className="button" to={path}>
             <span>
                 {text}
                 {/*<img src={arrow} alt="arrow link"/>*/}
