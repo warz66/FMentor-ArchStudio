@@ -1,0 +1,122 @@
+#hero {
+    position: relative;
+    max-height: 720px;
+    margin-bottom: 200px;
+}
+
+#hero #hero-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 628px;
+    height: 503px; 
+}
+
+#hero #hero-info .h1-design-light {
+    position: absolute;
+    top: -78px;
+    left: -20px;
+}
+
+#hero #hero-info #hero-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 446px;
+    height: 343px;
+}
+
+#hero #hero-info #hero-text::after {
+    content:"";
+    position: absolute;
+    height: 1px;
+    width: 65px;
+    background-color: var(--light-grey);
+    top: 0px;
+}
+
+#hero #hero-info #hero-text h2 {
+    margin-bottom: 49px;
+}
+
+@media (max-width: 1100px) {
+    #hero #hero-info {
+        width: 515px;
+        height: 431px;
+    }
+    #hero #hero-info .h1-design-light {
+        font-size: 120px;
+        top: -86px;
+        right: -4px;
+        left: initial;
+        letter-spacing: -2px;
+    }
+    #hero #hero-info #hero-text {
+        width: 456px;
+    }
+}
+
+@media (max-width: 654px) {
+    #hero picture img {
+        width: 100%;
+        max-height: 720px;
+        object-fit: cover;
+    }
+    #hero #hero-info .h1-design-light { 
+        right: 0px;
+    } 
+}
+
+@media (max-width: 580px) {
+    #hero {
+        max-height: initial;
+        margin-bottom: 69px; /* 72px ? */
+    }
+    #hero picture {
+        position: relative;
+
+    }
+    #hero picture::after {
+        content:"";
+        position: absolute;
+        bottom: 4px; /* 0 but, fix picture */
+        left: 0;
+        width: calc(100% - 32px);
+        height: 45px;
+        background-color: white;
+    }
+    #hero #hero-info { 
+        position: initial;
+        padding: 0px 32px;
+        width: 100%;
+        height: initial;
+        display: block;
+        margin-top: 32px;
+    }
+    #hero #hero-info #hero-text {
+        width: initial;
+        height: initial;
+    }
+    #hero #hero-info #hero-text::after {
+        content: none;
+    }
+    #hero #hero-info #hero-text h2 { 
+        margin-bottom: 10px; 
+        letter-spacing: -1px;
+    }
+    #hero #hero-info .h1-design-light { 
+        display: none;
+    } 
+}
+
+@media (max-width: 385px) {
+    #hero picture img {
+        height: 240px;
+    }
+}

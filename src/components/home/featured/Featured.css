@@ -35,10 +35,10 @@
         padding-bottom: 96px;    
         position: relative;
     }  
-    #featured h2 {
+    /*#featured h2 {
         font-size: 40px;
         line-height: 48px;
-    }
+    }*/
     #featured > div:first-of-type {
         margin-bottom: 38px; 
     }

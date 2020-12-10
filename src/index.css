@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  word-spacing: 0.2px;
+}
+
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
@@ -25,13 +29,13 @@ h1 {
   font-size: 80px;
   font-weight: bold;
   line-height: 80px;
-  letter-spacing: -2px;
+  letter-spacing: -2px; /* -1.5px */
 }
 
 .h1-design-light {
   font-size: 200px;
   line-height: 200px;
-  letter-spacing: -2px; /* -5px ? */
+  letter-spacing: -5px; /* -2px ? */
   font-weight: 700;
   color: var(--very-light-grey);  
 }
@@ -41,9 +45,21 @@ h2 {
   font-weight: bold;
   line-height: 56px;
   letter-spacing: -2px;
+  word-spacing: 2px;
 }
 
 h3 {
   font-size: 18px; 
   line-height: 25px; 
+}
+
+@media (max-width: 580px) {
+  h1, h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }

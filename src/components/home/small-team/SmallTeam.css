@@ -45,11 +45,12 @@
     #small-team-info {
         top:184px;
         left: 32px;
-        width: 255px;
+        width: calc(100% - 58px);
+        max-width: 255px;
     }
     #small-team-info h2 {
-        font-size: 40px;
-        line-height: 48px;
+        /*font-size: 40px;
+        line-height: 48px;*/
         letter-spacing: -1.429px;
         margin-bottom: 28px;
     }    

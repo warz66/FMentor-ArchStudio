@@ -101,9 +101,10 @@
 
 @media (max-width: 580px) {
     #welcome-info h2 {
+        max-width: 311px;
         width: 100%;
-        font-size: 40px;
-        line-height: 48px;
+        /*font-size: 40px;
+        line-height: 48px;*/
         letter-spacing: -1.429px;
         margin-bottom: 26px;
     }
