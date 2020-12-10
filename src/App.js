@@ -15,10 +15,10 @@ import mobileMenu from 'assets/design/mobile/Mobile-Menu.jpeg';
 import desktopPortfolio from 'assets/design/desktop/Desktop-Portfolio.jpeg';
 import desktopPortfolioActiveStates from 'assets/design/desktop/Desktop-Portfolio-ActiveStates.jpeg';
 import tabletPortfolio from 'assets/design/tablet/Tablet-Portfolio.jpeg';
-import mobilePortfolio from 'assets/design/mobile/Mobile-Portfolio.jpeg';*/
+import mobilePortfolio from 'assets/design/mobile/Mobile-Portfolio.jpeg';
 import desktopAbout from 'assets/design/desktop/Desktop-About.jpeg';
 import tabletAbout from 'assets/design/tablet/Tablet-About.jpeg';
-import mobileAbout from 'assets/design/mobile/Mobile-About.jpeg';
+import mobileAbout from 'assets/design/mobile/Mobile-About.jpeg';*/
 
 const App = () => {
   const [location, setLocation] = useState('');
