@@ -15,7 +15,7 @@ const Heritage = () => {
                     Our small team of world-class professionals provides input on every project.  
                 </p>
              </div>
-             <img src={imgHeritage} alt="Our heritage image"/>
+             <img src={imgHeritage} alt="Our heritage"/>
         </div>
     );
 }
