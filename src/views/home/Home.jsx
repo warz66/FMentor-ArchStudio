@@ -1,5 +1,5 @@
 import './Home.css';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Carousel from 'components/home/carousel/Carousel';
 import Welcome from 'components/home/welcome/Welcome';
 import SmallTeam from 'components/home/small-team/SmallTeam';

@@ -1,7 +1,6 @@
 #hero {
     position: relative;
     max-height: 720px;
-    margin-bottom: 200px;
 }
 
 #hero #hero-info {
@@ -20,7 +19,7 @@
 #hero #hero-info .h1-design-light {
     position: absolute;
     top: -78px;
-    left: -20px;
+    right: 3px;
 }
 
 #hero #hero-info #hero-text {
@@ -54,7 +53,6 @@
         font-size: 120px;
         top: -86px;
         right: -4px;
-        left: initial;
         letter-spacing: -2px;
     }
     #hero #hero-info #hero-text {
@@ -76,7 +74,6 @@
 @media (max-width: 580px) {
     #hero {
         max-height: initial;
-        margin-bottom: 69px; /* 72px ? */
     }
     #hero picture {
         position: relative;

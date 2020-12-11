@@ -1,0 +1,22 @@
+#contact {
+    margin: 0px 165px;
+}
+
+@media (max-width: 1325px) {
+    #contact {
+        margin: 0px 97.5px;
+    }   
+}
+
+@media (max-width: 784px) {
+    #contact {
+        margin-left: calc(97.5px - (784px - 100vw));
+        margin-right: calc(97.5px - (784px - 100vw));
+    }    
+}
+
+@media (max-width: 730px) {
+    #contact {
+        margin: 0;
+    }
+}
