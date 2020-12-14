@@ -14,7 +14,7 @@
     margin-bottom: 3px;
 }
 .leader .social-network {
-    padding-top: 100px;
+    padding-top: 80px;
     width: 350px;
     height: 320px;
     position: absolute;
@@ -25,7 +25,7 @@
     top: 0px;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0);
-    transition: all 0.6s;
+    transition: all 0.4s;
 }
 
 @media (min-width: 1071px) {

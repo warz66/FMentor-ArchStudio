@@ -1,5 +1,5 @@
 import './ProjectsGallery.css';
-import ProjectCard from 'components/projectCard/ProjectCard'
+import ProjectCard from './projectCard/ProjectCard'
 
 const ProjectsGallery = ({arrayProjectCards = [], numberDesign = false, date = true, scale = true}) => {
 

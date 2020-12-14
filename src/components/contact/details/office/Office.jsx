@@ -1,0 +1,37 @@
+import './Office.css';
+import { Link } from 'react-router-dom'
+
+const Office = ({ name, mail, num , street, phone, link }) => {
+
+    return (
+        <div className="details-office">
+            <table>
+                <thead>
+                    <tr>
+                        <th colSpan="2">{name}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mail :</td>
+                        <td>{mail}</td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td>{num}&nbsp;&nbsp;{street}</td>
+                    </tr>
+                    <tr>
+                        <td>Phone :</td>
+                        <td>{phone}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <Link to={link}>
+                View on Map
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><path fill="none" fillRule="evenodd" stroke="#000" strokeWidth="2" d="M15 1l9 9-9 9M0 10h24"></path></svg>
+            </Link>
+        </div>
+    );
+}
+
+export default Office;

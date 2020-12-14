@@ -1,0 +1,80 @@
+@import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
+
+#details {
+    margin-bottom: 162px;
+}
+
+#details > div:first-of-type {
+    margin-top: 200px;
+    display: flex;
+    padding-top: 82px;
+    position: relative;
+}
+
+#details > div:first-of-type::after {
+    content:"";
+    position: absolute;
+    height: 1px;
+    width: 65px;
+    background-color: var(--light-grey);
+    top: 0;
+    left: 0;
+}
+
+#details h2 {
+    width: 350px;
+}
+
+#details-offices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    margin-bottom: 200px;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 560px;
+}
+
+@media (max-width: 1150px) {
+    #details > div:first-of-type {
+        flex-direction: column;
+    }
+    #details h2 {
+        width: 100%;
+        margin-bottom: 64px;
+    }
+    #details-offices {
+        justify-items: left;
+    }
+}
+
+@media (max-width: 950px) {
+    #details-offices {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 730px) {
+    #details > div:first-of-type {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    #details > div:first-of-type {
+        margin-top: 69px;
+        padding-top: 73px; 
+    }
+    #details h2 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    #details h2 {
+        max-width: 300px;
+    }
+}

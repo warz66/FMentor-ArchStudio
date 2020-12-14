@@ -63,13 +63,10 @@ const App = () => {
         
         <Switch>
 
-          {/*<Route exact path="/" render={props => <Home key={Date.now()} assignLocation={assignLocation} {...props}/>}/>*/}
           <Route exact path="/">
             <Home assignLocation={assignLocation}/>
           </Route>
-            {/*<Route exact path="/" component={Home} assignLocation={assignLocation}/>*/}
           
-
           <Route path="/portfolio">
             <Portfolio assignLocation={assignLocation}/>
           </Route>

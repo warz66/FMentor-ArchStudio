@@ -5,7 +5,7 @@ const Heritage = () => {
 
     return (
         <div id="heritage">
-             <div id="heritage-text">
+            <div id="heritage-text">
                 <h2>Our<br/>Heritage</h2>
                 <p>
                     Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.
@@ -14,8 +14,8 @@ const Heritage = () => {
                     <br/><br/>
                     Our small team of world-class professionals provides input on every project.  
                 </p>
-             </div>
-             <img src={imgHeritage} alt="Our heritage"/>
+            </div>
+            <img src={imgHeritage} alt="Our heritage"/>
         </div>
     );
 }

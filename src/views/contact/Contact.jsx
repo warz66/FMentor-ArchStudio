@@ -1,6 +1,7 @@
 import './Contact.css';
 import { useEffect } from 'react';
 import Hero from 'components/hero/Hero'
+import Details from 'components/contact/details/Details'
 import imgContactMobile from 'assets/contact/mobile/image-hero.jpg'
 import imgContactTablet from 'assets/contact/tablet/image-hero.jpg'
 import imgContactDesktop from 'assets/contact/desktop/image-hero.jpg'
@@ -22,6 +23,8 @@ const Home = ({assignLocation}) => {
                 heroTextTitle="Tell us about your project"
                 heroTextParagraph="We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!"
             />
+
+            <Details/>
 
         </div>
     );
