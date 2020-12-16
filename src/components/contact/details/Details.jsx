@@ -1,16 +1,16 @@
 import './Details.css';
 import iconOffice from 'assets/icons/icon-map-point.svg'
 import Office from './office/Office'
-import React, { useEffect, useState, useRef, useImperativeHandle, forwardRef } from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import React, { useEffect, useState, useRef } from 'react'
+import { MapContainer, useMap, TileLayer, Marker, Popup } from 'react-leaflet'
 import { Icon } from "leaflet";
 import * as jsonOffices from "./offices.json";
 
 const Details = () => {
     const anchorMapOffice = "details-map-offices"
-    const [center, setCenter] = useState(null);
+    const center = useState(null);
     const [openPopupOfficeId , setOpenPopupOfficeId] = useState(null);
-    const [zoom, setZoom] = useState(null);
+
 
     function goToMapOffice(office) {
         document.getElementById(anchorMapOffice).scrollIntoView({
@@ -19,10 +19,6 @@ const Details = () => {
             inline: 'nearest'
         });
         setOpenPopupOfficeId(office.id);
-        //console.log(mapRef);
-        //mapRef.mapInstance.flyTo(office.coordinates, 15);
-        setCenter(office.coordinates);
-        setZoom(15);
     }
 
     function PointsLayer(props) {
@@ -37,6 +33,7 @@ const Details = () => {
     }
 
     function PointMarker(props) {
+        const map = useMap();
         const markerRef = useRef(null);
         const { office, openPopup } = props;
         const icon = new Icon({
@@ -46,7 +43,8 @@ const Details = () => {
       
         useEffect(() => {
             if (openPopup) { 
-                markerRef.current.openPopup() 
+                map.flyTo(office.coordinates, 15, {duration: 6});
+                markerRef.current.openPopup(); 
             }
         }, [openPopup]);
       
@@ -65,14 +63,13 @@ const Details = () => {
         );
       }
 
-    function MyMapComponent () {
-        const mapRef = useRef(null);
+    function MyMapComponent (props) {
         return (
-            <MapContainer ref={mapRef} bounds={jsonOffices.offices.map(office => office.coordinates)} center={center} zoom={zoom} zoomControl={false}>
+            <MapContainer bounds={jsonOffices.offices.map(office => office.coordinates)} center={center} zoomControl={false}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <PointsLayer offices={jsonOffices.offices} />
+                <PointsLayer offices={jsonOffices.offices}/>
             </MapContainer>
           )
     };
@@ -104,79 +101,6 @@ const Details = () => {
 
             <div id={anchorMapOffice}>
                 <MyMapComponent/>
-                {/*<MapContainer ref={mapRef} bounds={bounds} zoomControl={lol}>
-
-                    <TileLayer
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    {jsonOffices.offices.map(office => (
-                        <Marker
-                            ref={mapRef}
-                            key={office.id}
-                            position={[
-                                office.coordinates[0],
-                                office.coordinates[1]
-                            ]}
-                            icon={icon}
-                            eventHandlers={{click: () => {
-                                setActiveOffice(office);
-                            }}}
-                        >
-                            {activeOffice && (
-                            <Popup
-                                position={[
-                                    activeOffice.coordinates[0],
-                                    activeOffice.coordinates[1]
-                                ]}
-                            >
-                                <div>
-                                    <h3>{activeOffice.name}</h3>
-                                    <p>{activeOffice.num} {activeOffice.street}</p>
-                                    <p>{activeOffice.mail}</p>
-                                    <p>{activeOffice.phone}</p>
-                                </div>
-                            </Popup>
-                            )}
-                        </Marker>
-                    ))}
-
-                </MapContainer>*/}
-
-                {/*<MapContainer center={[45.42, -75.45]} zoom={11} zoomControl={false}>
-
-                    <TileLayer
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    {parkData.features.map(park => (
-                        <Marker
-                            key={park.properties.PARK_ID}
-                            position={[
-                                park.geometry.coordinates[1],
-                                park.geometry.coordinates[0]
-                            ]}
-                            icon={icon}
-                            eventHandlers={{click: () => {
-                                setActivePark(park);
-                            }}}
-                        >
-                            {activePark && (
-                            <Popup
-                                position={[
-                                    activePark.geometry.coordinates[1],
-                                    activePark.geometry.coordinates[0]
-                                ]}
-                            >
-                                <div>
-                                    <h3>{activePark.properties.NAME}</h3>
-                                    <p>{activePark.properties.DESCRIPTIO}</p>
-                                </div>
-                            </Popup>
-                            )}
-                        </Marker>
-                    ))}
-                    
-                </MapContainer>*/}
-
             </div>
 
         </section>
