@@ -19,6 +19,46 @@
       "phone": "832-123-4321",
       "coordinates": [35.958213, -83.933372],
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+      "id": 3,
+      "name": "Office II",
+      "mail": "archtwo@mail.com",
+      "num": "3399",
+      "street": "Wines Lane TX",
+      "phone": "832-123-4321",
+      "coordinates": [37.958213, -80.933372],
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+      "id": 4,
+      "name": "Office II",
+      "mail": "archtwo@mail.com",
+      "num": "3399",
+      "street": "Wines Lane TX",
+      "phone": "832-123-4321",
+      "coordinates": [38.958213, -95.933372],
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+      "id": 5,
+      "name": "Office II",
+      "mail": "archtwo@mail.com",
+      "num": "3399",
+      "street": "Wines Lane TX",
+      "phone": "832-123-4321",
+      "coordinates": [32.958213, -85.933372],
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+      "id": 6,
+      "name": "Office II",
+      "mail": "archtwo@mail.com",
+      "num": "3399",
+      "street": "Wines Lane TX",
+      "phone": "832-123-4321",
+      "coordinates": [41.958213, -98.933372],
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
     }
   ]
 }
