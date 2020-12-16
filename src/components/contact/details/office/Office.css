@@ -24,15 +24,36 @@
     white-space: nowrap;
 }
 
-.details-office a {
+.details-office .details-office-link {
     display: flex;
     align-items: center;
     font-weight: bold;
     color: black;
+    cursor: pointer;
+    width: 162px;
 }
 
-.details-office a svg {
+.details-office .details-office-link > span {
+    transition: background-size 0.2s ease-in;
+    background: linear-gradient(black,black);
+    background-repeat: no-repeat;
+    background-size: 0px 1px;
+    background-position-x: left;
+    background-position-y: 17px;
+}
+
+.details-office .details-office-link > svg {
     margin-left: 26px;
+    transition: 0.2s ease-in;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .details-office .details-office-link:hover > span {
+        background-size: 100% 1px;
+    }
+    .details-office .details-office-link:hover > svg {
+        margin-left: 12px;
+    }
 }
 
 @media (max-width: 1150px) {

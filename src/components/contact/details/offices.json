@@ -1,28 +1,24 @@
 {
-    "features": [
-      {
-        "type": "Feature",
-        "properties": {
-          "PARK_ID": 960,
-          "NAME": "Bearbrook Skateboard Park",
-          "DESCRIPTIO": "Flat asphalt surface, 5 components"
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.3372987731628, 45.383321536272049]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "PARK_ID": 1219,
-          "NAME": "Bob MacQuarrie Skateboard Park (SK8 Extreme Park)",
-          "DESCRIPTIO": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-75.546518086577947, 45.467134581917357]
-        }
-      }
-    ]
-  }
+  "offices": [
+    {
+      "id": 1,
+      "name": "Main Office",
+      "mail": "archone@mail.com",
+      "num": "1892",
+      "street": "Chenoweth Drive TN",
+      "phone": "123-456-3451",
+      "coordinates": [32.779947, -96.802498],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 2,
+      "name": "Office II",
+      "mail": "archtwo@mail.com",
+      "num": "3399",
+      "street": "Wines Lane TX",
+      "phone": "832-123-4321",
+      "coordinates": [35.958213, -83.933372],
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    }
+  ]
+}

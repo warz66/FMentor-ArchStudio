@@ -1,7 +1,16 @@
 import './Office.css';
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
+//import { useEffect } from 'react';
 
-const Office = ({ name, mail, num , street, phone, link }) => {
+const Office = ({ name, mail, num , street, phone, goToMapOffice, office }) => {
+
+    /*function scrollToHash() {
+
+    }
+
+    useEffect(() => {
+        scrollToHash();
+    });*/
 
     return (
         <div className="details-office">
@@ -26,10 +35,10 @@ const Office = ({ name, mail, num , street, phone, link }) => {
                     </tr>
                 </tbody>
             </table>
-            <Link to={link}>
-                View on Map
+            <div className="details-office-link" onClick={() => { goToMapOffice(office) }}>
+                <span>View on Map</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><path fill="none" fillRule="evenodd" stroke="#000" strokeWidth="2" d="M15 1l9 9-9 9M0 10h24"></path></svg>
-            </Link>
+            </div>
         </div>
     );
 }
