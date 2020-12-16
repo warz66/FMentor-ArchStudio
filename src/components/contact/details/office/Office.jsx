@@ -1,16 +1,6 @@
 import './Office.css';
-//import { Link } from 'react-router-dom'
-//import { useEffect } from 'react';
 
 const Office = ({ name, mail, num , street, phone, goToMapOffice, office }) => {
-
-    /*function scrollToHash() {
-
-    }
-
-    useEffect(() => {
-        scrollToHash();
-    });*/
 
     return (
         <div className="details-office">
