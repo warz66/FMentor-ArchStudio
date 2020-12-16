@@ -33,21 +33,22 @@ const Details = () => {
     }
 
     function PointMarker(props) {
+        const { office, openPopup } = props;
         const map = useMap();
         const markerRef = useRef(null);
-        const { office, openPopup } = props;
+
         const icon = new Icon({
             iconUrl: iconOffice,
             iconSize: [40, 48]
         });
-      
+
         useEffect(() => {
             if (openPopup) { 
                 map.flyTo(office.coordinates, 15, {duration: 6});
                 markerRef.current.openPopup(); 
             }
-        }, [openPopup]);
-      
+        }/*, [openPopup]*/);
+
         return (
           <Marker ref={markerRef} icon={icon} position={[office.coordinates[0],office.coordinates[1]]}>
             <Popup position={[office.coordinates[0], office.coordinates[1]]} >
