@@ -1,0 +1,48 @@
+#connect {
+    margin-bottom: 153px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#connect h2 {
+    width: 350px;
+}
+
+#connect-form {
+    width: 730px;
+}
+
+#connect input {
+    margin-bottom: 40px;
+}
+
+input, textarea {
+    font-family: 'Spartan', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--very-dark-blue);
+    font-size: 20px;
+    letter-spacing: -0.312px;
+    line-height: 24px;
+    width: 100%;
+    padding: 0px 0px 22px 34.5px;
+    border: none;
+    border-bottom: 2px solid var(--light-grey);
+}
+
+textarea {
+    resize: none;
+}
+
+#connect-form input::placeholder {
+    color: var(--light-grey);
+}
+
+#connect-form textarea::placeholder {
+    color: var(--light-grey);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border-bottom: 3px solid var(--very-dark-blue) !important;
+}

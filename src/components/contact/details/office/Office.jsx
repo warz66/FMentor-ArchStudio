@@ -25,7 +25,7 @@ const Office = ({ name, mail, num , street, phone, goToMapOffice, office }) => {
                     </tr>
                 </tbody>
             </table>
-            <div className="details-office-link" onClick={() => { goToMapOffice(office) }}>
+            <div className="details-office-link" onClick={() => { goToMapOffice(office.id) }}>
                 <span>View on Map</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><path fill="none" fillRule="evenodd" stroke="#000" strokeWidth="2" d="M15 1l9 9-9 9M0 10h24"></path></svg>
             </div>

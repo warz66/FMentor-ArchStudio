@@ -5,21 +5,20 @@ import { MapContainer, useMap, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from "leaflet";
 import * as jsonOffices from "components/contact/details/offices.json";
 
-const Map = ({anchorMapOffice, openPopupOfficeId}) => {
+const Map = ({anchorMapOffice, goToOfficeId, openPopup}) => {
 
-    function PointsLayer(props) {
-        const { offices } = props;
+    const PointsLayer = ({offices}) => {
         return offices.map( office => (
           <PointMarker
             key={office.id}
             office={office}
-            openPopup={office.id === openPopupOfficeId}
+            goToOffice={office.id === goToOfficeId}
+            openPopup={openPopup}
           />
         ));
     }
 
-    function PointMarker(props) {
-        const { office, openPopup } = props;
+    const PointMarker = ({office, goToOffice, openPopup}) =>  {
         const map = useMap();
         const markerRef = useRef(null);
 
@@ -29,11 +28,13 @@ const Map = ({anchorMapOffice, openPopupOfficeId}) => {
         });
 
         useEffect(() => {
-            if (openPopup) { 
-                map.flyTo(office.coordinates, 15, {duration: 6});
-                markerRef.current.openPopup(); 
+            if (goToOffice) { 
+                map.flyTo(office.coordinates, 15, {duration: 9});
+                if (openPopup) {
+                    markerRef.current.openPopup(); 
+                }
             }
-        }/*, [openPopup]*/);
+        }, [goToOffice, openPopup, map, office]);
 
         return (
           <Marker ref={markerRef} icon={icon} position={[office.coordinates[0],office.coordinates[1]]}>
@@ -58,7 +59,6 @@ const Map = ({anchorMapOffice, openPopupOfficeId}) => {
                 />
                 <PointsLayer offices={jsonOffices.offices}/>
             </MapContainer>
-          )
         </div>
     );
 }

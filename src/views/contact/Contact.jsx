@@ -2,6 +2,7 @@ import './Contact.css';
 import { useEffect } from 'react';
 import Hero from 'components/hero/Hero'
 import Details from 'components/contact/details/Details'
+import Connect from 'components/contact/connect/Connect'
 import imgContactMobile from 'assets/contact/mobile/image-hero.jpg'
 import imgContactTablet from 'assets/contact/tablet/image-hero.jpg'
 import imgContactDesktop from 'assets/contact/desktop/image-hero.jpg'
@@ -25,6 +26,8 @@ const Home = ({assignLocation}) => {
             />
 
             <Details/>
+
+            <Connect/>
 
         </div>
     );

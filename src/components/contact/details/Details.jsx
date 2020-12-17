@@ -6,15 +6,24 @@ import MapComponent from "./map/Map";
 
 const Details = () => {
     const anchorMapOffice = "details-map-offices"
-    const [openPopupOfficeId , setOpenPopupOfficeId] = useState(null);
+    const [openPopup , setOpenPopup] = useState(null);
+    const [goToOfficeId , setGoToOfficeId] = useState(null);
 
-    function goToMapOffice(office) {
-        document.getElementById(anchorMapOffice).scrollIntoView({
-            block: 'center',
-            behavior: 'smooth',
-            inline: 'nearest'
-        });
-        setOpenPopupOfficeId(office.id);
+    function goToMapOffice(officeId) {
+        const elMap = document.getElementById(anchorMapOffice);
+        const rectMap = elMap.getBoundingClientRect();
+
+        if (rectMap.y  >= window.innerHeight - rectMap.height) {
+            elMap.scrollIntoView({
+                block: 'end',
+                behavior: 'smooth',
+                inline: 'nearest'
+            });
+        }
+
+       (rectMap.height > 530) ? setOpenPopup(true) : setOpenPopup(false);
+        
+        setGoToOfficeId(officeId);
     }
 
     return (
@@ -42,7 +51,7 @@ const Details = () => {
                 </div>
             </div>
 
-            <MapComponent anchorMapOffice={anchorMapOffice} openPopupOfficeId={openPopupOfficeId}/>
+            <MapComponent anchorMapOffice={anchorMapOffice} openPopup={openPopup} goToOfficeId={goToOfficeId}/>
 
         </section>
     );
