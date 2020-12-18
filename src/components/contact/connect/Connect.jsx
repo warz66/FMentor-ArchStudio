@@ -40,7 +40,7 @@ const Connect = () => {
                     <textarea className={activeErrorMessage ? "active-input-error" : ""} aria-label="message" name="message" placeholder="Message" rows="3" onClick={() => {setActiveErrorMessage(false)}}/>
                     <span className={`msg-error ${activeErrorMessage ? "active-msg-error" : ""}`}>Can't be empty</span>
                 </div>
-                <button type="submit" form="connect-form">
+                <button type="submit" aria-label="submit form" form="connect-form">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><path fill="none" fillRule="evenodd" stroke="#fff" strokeWidth="2" d="M15 1l9 9-9 9M0 10h24"></path></svg>
                 </button>
             </form>
