@@ -16,6 +16,7 @@ a {
 
 p {
   word-spacing: 0.2px;
+  color: var(--dark-grey);
 }
 
 body {
