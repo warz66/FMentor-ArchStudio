@@ -65,6 +65,11 @@
 .project-card-info a {
     font-weight: 500;
     color: white;
+    opacity: 0.75;
+}
+
+.project-card-info span {
+    opacity: 0.75;
 }
 
 @media (max-width: 1040px) {

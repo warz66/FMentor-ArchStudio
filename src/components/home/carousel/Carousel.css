@@ -38,7 +38,7 @@
 .swiper-pagination-bullet {
     width: 80px;
     height: 80px;
-    color: #000;
+    color: var(--medium-grey);
     border-radius: 0;
     font-weight: bold;
     padding: 28.5px 0px;
