@@ -65,6 +65,9 @@
 .project-card-info a {
     font-weight: 500;
     color: white;
+}
+
+.project-card-info a:last-of-type {
     opacity: 0.75;
 }
 
