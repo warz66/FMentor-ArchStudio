@@ -13,6 +13,7 @@
     width: 730px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #connect input {
@@ -62,6 +63,17 @@
 #connect-form textarea:focus, input:focus {
     outline: none;
     box-shadow: 0px -3px 0px var(--very-dark-blue) inset !important;
+}
+
+#connect-form #msg-send-sucess {
+    position: absolute;
+    left: 34.5px;
+    bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6B8E23;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 #connect-form button {

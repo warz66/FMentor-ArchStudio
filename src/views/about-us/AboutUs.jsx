@@ -14,7 +14,7 @@ const AboutUs = ({assignLocation}) => {
     });
 
     return (
-        <div id="about-us">
+        <main id="about-us" className="slideY">
 
             <Hero 
                 imgMobile={imgAboutMobile}
@@ -29,7 +29,7 @@ const AboutUs = ({assignLocation}) => {
 
             <Leaders/>
 
-        </div>
+        </main>
     );
 }
 

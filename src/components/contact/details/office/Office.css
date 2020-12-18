@@ -51,9 +51,9 @@
     .details-office .details-office-link:hover > span {
         background-size: 100% 1px;
     }
-    .details-office .details-office-link:hover > svg {
+    /*.details-office .details-office-link:hover > svg {
         margin-left: 12px;
-    }
+    }*/
 }
 
 @media (max-width: 1150px) {

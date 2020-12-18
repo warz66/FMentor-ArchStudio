@@ -12,7 +12,7 @@ const Home = ({assignLocation}) => {
     });
 
     return (
-        <div id="home">
+        <main id="home" className="slideY">
 
             <Carousel/>
 
@@ -22,7 +22,7 @@ const Home = ({assignLocation}) => {
 
             <Featured/>
 
-        </div>
+        </main>
     );
 }
 

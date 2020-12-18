@@ -3,7 +3,7 @@ import './Hero.css';
 const Hero = ({imgMobile, imgTablet, imgDesktop, heroTitle, heroTextTitle, heroTextParagraph}) => {
 
     return (
-        <div id="hero">
+        <section id="hero">
             <picture>
                 <source srcSet={imgMobile} media="(max-width: 580px)" type="image/jpeg"/>
                 <source srcSet={imgTablet} media="(max-width: 850px)" type="image/jpeg"/>
@@ -16,7 +16,7 @@ const Hero = ({imgMobile, imgTablet, imgDesktop, heroTitle, heroTextTitle, heroT
                     <p>{heroTextParagraph}</p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

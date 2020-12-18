@@ -4,7 +4,7 @@ import imgHeritage from 'assets/about/desktop/image-heritage.jpg';
 const Heritage = () => {
 
     return (
-        <div id="heritage">
+        <section id="heritage">
             <div id="heritage-text">
                 <h2>Our<br/>Heritage</h2>
                 <p>
@@ -16,7 +16,7 @@ const Heritage = () => {
                 </p>
             </div>
             <img src={imgHeritage} alt="Our heritage"/>
-        </div>
+        </section>
     );
 }
 

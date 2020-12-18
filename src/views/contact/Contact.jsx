@@ -14,7 +14,7 @@ const Home = ({assignLocation}) => {
     });
 
     return (
-        <div id="contact">
+        <main id="contact" className="slideY">
 
             <Hero 
                 imgMobile={imgContactMobile}
@@ -29,7 +29,7 @@ const Home = ({assignLocation}) => {
 
             <Connect/>
 
-        </div>
+        </main>
     );
 }
 

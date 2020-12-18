@@ -63,21 +63,21 @@ const App = () => {
         
         <Switch>
 
-          <Route exact path="/">
-            <Home assignLocation={assignLocation}/>
-          </Route>
-          
-          <Route path="/portfolio">
-            <Portfolio assignLocation={assignLocation}/>
-          </Route>
+            <Route exact path="/">
+              <Home assignLocation={assignLocation}/>
+            </Route>
+            
+            <Route path="/portfolio">
+              <Portfolio assignLocation={assignLocation}/>
+            </Route>
 
-          <Route path="/about-us">
-            <AboutUs assignLocation={assignLocation}/>
-          </Route>
+            <Route path="/about-us">
+              <AboutUs assignLocation={assignLocation}/>
+            </Route>
 
-          <Route path="/contact">
-            <Contact assignLocation={assignLocation}/>
-          </Route>
+            <Route path="/contact">
+              <Contact assignLocation={assignLocation}/>
+            </Route>
 
         </Switch>
 

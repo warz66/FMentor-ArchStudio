@@ -10,9 +10,9 @@ const Portfolio = ({assignLocation}) => {
     });
 
     return (
-        <div id="portfolio">
+        <main id="portfolio" className="slideY">
             <ProjectsGallery arrayProjectCards={arrayProjectCards}/>
-        </div>
+        </main>
     );
 }
 

@@ -8,7 +8,7 @@ import maria from 'assets/about/desktop/avatar-maria.jpg';
 const Leaders = () => {
 
     return (
-        <div id="section-leaders">
+        <section id="section-leaders">
             <h2>The<br/>Leaders</h2>
             <div id="the-leaders">
                 <Leader image={jake} name="Jake Richards" spec="Chief Architect"/>
@@ -16,7 +16,7 @@ const Leaders = () => {
                 <Leader image={jackson} name="Jackson Rourke" spec="Lead Designer"/>
                 <Leader image={maria} name="Maria Simpson" spec="Senior Architect"/>
             </div>
-        </div>
+        </section>
     );
 }
 
