@@ -1,6 +1,6 @@
 #hero {
     position: relative;
-    max-height: 720px;
+    height: 720px;
 }
 
 #hero #hero-info {
@@ -73,7 +73,7 @@
 
 @media (max-width: 580px) {
     #hero {
-        max-height: initial;
+        height: initial;
     }
     #hero picture {
         position: relative;

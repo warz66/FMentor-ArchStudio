@@ -13,7 +13,7 @@ function Footer() {
         
         <footer>
             <div>
-                <Link onClick={scrollToTop} to="/">
+                <Link onClick={scrollToTop} to="/" aria-label="homepage">
                     <svg id="footer-logo" xmlns="http://www.w3.org/2000/svg" width="97" height="40" viewBox="0 0 97 40">
                         <path
                             fill="#fff"

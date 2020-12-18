@@ -1,5 +1,6 @@
 #connect {
-    margin-bottom: 153px;
+    margin-top: 166px;
+    margin-bottom: 160px;
     display: flex;
     justify-content: space-between;
 }
@@ -10,27 +11,43 @@
 
 #connect-form {
     width: 730px;
+    display: flex;
+    flex-direction: column;
 }
 
 #connect input {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    padding: 0px 0px 19px 34.5px;
 }
 
-input, textarea {
+#connect textarea {
+    padding-left: 34.5px;
+    height: 90px;
+}
+
+#connect-form input, textarea {
     font-family: 'Spartan', sans-serif;
     cursor: pointer;
     font-weight: bold;
     color: var(--very-dark-blue);
     font-size: 20px;
     letter-spacing: -0.312px;
-    line-height: 24px;
     width: 100%;
-    padding: 0px 0px 22px 34.5px;
     border: none;
-    border-bottom: 2px solid var(--light-grey);
+    box-shadow: 0px -1px 0px var(--very-dark-blue) inset;
+    transition: 0.3s;
 }
 
-textarea {
+#connect-form .active-input-error {
+    box-shadow: 0px -1px 0px var(--red-error) inset;
+}
+
+#connect-form .active-input-error::placeholder {
+    color: var(--red-error);
+    opacity: 0.5;
+}
+
+#connect-form textarea {
     resize: none;
 }
 
@@ -42,7 +59,90 @@ textarea {
     color: var(--light-grey);
 }
 
-textarea:focus, input:focus{
+#connect-form textarea:focus, input:focus {
     outline: none;
-    border-bottom: 3px solid var(--very-dark-blue) !important;
+    box-shadow: 0px -3px 0px var(--very-dark-blue) inset !important;
+}
+
+#connect-form button {
+    margin-top: -8px; /* hack ? */ 
+    align-self: flex-end;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: var(--very-dark-blue);
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+} 
+
+#connect-form button:focus {
+    outline: none;    
+} 
+
+#connect-form button:hover {
+    background-color: var(--dark-grey);
+}
+
+#connect-form > div  {
+    position: relative;
+}
+
+#connect-form > div .msg-error {
+    /*display: none;*/
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.234px;
+    right: 16px;
+    top: 10px;
+    color: var(--red-error);
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+#connect-form > div .active-msg-error {
+    /*display: initial;*/
+    opacity: 1;
+}
+
+
+@media (max-width: 1150px) {
+    #connect {
+        margin-top: 205px;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }   
+    #connect h2 {
+        width: 100%;
+        margin-bottom: 62px;
+    }
+    #connect-form {
+        width: 100%;
+    }     
+}
+
+@media (max-width: 730px) {
+    #connect {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    #connect {
+        margin-top: 77px;
+        margin-bottom: 132px;
+    }
+    #connect h2 {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 430px) {
+    #connect h2 {
+        max-width: 250px;
+    }
 }

@@ -120,7 +120,7 @@ header ul a:hover {
 
     #menu {
         position: absolute;
-        z-index: 12;
+        z-index: 1000;
         top: 96px;
         bottom:0;
         right:0;
@@ -135,7 +135,7 @@ header ul a:hover {
 
     #menu-curtain {
         position: absolute;
-        z-index: 11;
+        z-index: 999;
         top: 96px;
         bottom:0;
         right:0;
