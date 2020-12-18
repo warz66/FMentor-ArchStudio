@@ -10,8 +10,9 @@ import imgContactDesktop from 'assets/contact/desktop/image-hero.jpg'
 const Home = ({assignLocation}) => {
     
     useEffect(() => {
+        document.title = "Contact | Arch Studio";
         assignLocation("CONTACT");
-    });
+    },[]);
 
     return (
         <main id="contact" className="slideY">

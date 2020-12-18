@@ -6,8 +6,9 @@ import React, { useEffect } from 'react';
 const Portfolio = ({assignLocation}) => {
 
     useEffect(() => {
+        document.title = "Portfolio | Arch Studio";
         assignLocation("PORTFOLIO");
-    });
+    },[]);
 
     return (
         <main id="portfolio" className="slideY">

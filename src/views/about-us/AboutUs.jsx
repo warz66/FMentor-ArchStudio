@@ -10,8 +10,9 @@ import imgAboutDesktop from 'assets/about/desktop/image-hero.jpg'
 const AboutUs = ({assignLocation}) => {
 
     useEffect(() => {
+        document.title = "About Us | Arch Studio";
         assignLocation("ABOUT US");
-    });
+    },[]);
 
     return (
         <main id="about-us" className="slideY">

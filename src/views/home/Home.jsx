@@ -8,8 +8,9 @@ import Featured from 'components/home/featured/Featured';
 const Home = ({assignLocation}) => {
     
     useEffect(() => {
+        document.title = "Home | Arch Studio";
         assignLocation("HOME");
-    });
+    },[]);
 
     return (
         <main id="home" className="slideY">
