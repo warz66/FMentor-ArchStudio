@@ -8,7 +8,7 @@ const Portfolio = ({assignLocation}) => {
     useEffect(() => {
         document.title = "Portfolio | Arch Studio";
         assignLocation("PORTFOLIO");
-    },[]);
+    },[assignLocation]);
 
     return (
         <main id="portfolio" className="slideY">

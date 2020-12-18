@@ -10,7 +10,7 @@ const Home = ({assignLocation}) => {
     useEffect(() => {
         document.title = "Home | Arch Studio";
         assignLocation("HOME");
-    },[]);
+    },[assignLocation]);
 
     return (
         <main id="home" className="slideY">
