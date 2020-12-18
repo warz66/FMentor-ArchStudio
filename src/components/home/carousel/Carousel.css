@@ -74,6 +74,7 @@
     width: 445px;
     margin-bottom: 37px;
     font-weight: 500;
+    color: white;
 }
 
 @media (max-width: 1200px) {
