@@ -23,7 +23,15 @@ const Connect = () => {
             setActiveErrorMessage(true);
             submit = false;
         }
-        if(submit) {/*e.target.submit();*/setActiveMsgSucess(true)} else {return false;} 
+        if(submit) {
+            /*e.target.submit();*/
+            setActiveMsgSucess(true)
+            e.target.name.value = '';
+            e.target.email.value = '';
+            e.target.message.value = '';
+        } else {
+            return false;
+        } 
     }
 
     return (
