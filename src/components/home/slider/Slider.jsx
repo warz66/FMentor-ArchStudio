@@ -4,12 +4,12 @@ import 'swiper/swiper.scss';
 import 'swiper/components/pagination/pagination.scss';
 
 import Button from 'components/button/Button'
-import './Carousel.css';
-import slides from './ImgCarousel';
+import './Slider.css';
+import slides from './slides';
 
 
 
-const Carousel = () => {
+const Slider = () => {
 
     SwiperCore.use([Pagination]);
 
@@ -35,7 +35,7 @@ const Carousel = () => {
                             <source srcSet={slide.image.tablet} media="(max-width: 850px)" type="image/jpeg"/>
                             <img src={slide.image.desktop} alt={slide.name}/>
                         </picture>
-                        <div className="carousel-hero-info">
+                        <div className="slider-hero-info">
                             <h1>{slide.title}</h1>
                             <p>{slide.text}</p>
                             <Button/>
@@ -47,4 +47,4 @@ const Carousel = () => {
     );
 }
 
-export default Carousel;
+export default Slider;
