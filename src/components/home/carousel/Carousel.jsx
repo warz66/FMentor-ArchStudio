@@ -14,7 +14,7 @@ const Carousel = () => {
     SwiperCore.use([Pagination]);
 
     return (
-        <section id="carousel-hero">
+        <section id="slider-hero">
 
             <Swiper
                 spaceBetween={0}
